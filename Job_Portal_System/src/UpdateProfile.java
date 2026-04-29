@@ -9,7 +9,7 @@ public class UpdateProfile {
             Scanner sc = new Scanner(System.in);
             Connection con = DBConnection.getConnection();
 
-            sc.nextLine(); // ✅ FIX: clear buffer
+            sc.nextLine(); 
 
             System.out.print("Enter New Name: ");
             String name = sc.nextLine();
