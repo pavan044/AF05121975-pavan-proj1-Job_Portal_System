@@ -6,7 +6,7 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        // Insert default jobs
+       
         new AddDefaultJobs().insertJobs();
 
         int choice;
@@ -18,7 +18,7 @@ public class Main {
             System.out.println("3. Exit");
             System.out.print("Enter choice: ");
             choice = sc.nextInt();
-            sc.nextLine(); // ✅ FIX buffer
+            sc.nextLine();
 
             switch (choice) {
 
@@ -27,7 +27,7 @@ public class Main {
                     break;
 
                 case 2:
-                    int userId = new LoginUser().login(sc); // ✅ FIXED
+                    int userId = new LoginUser().login(sc); 
 
                     if (userId != -1) {
 
@@ -41,7 +41,7 @@ public class Main {
                             System.out.println("5. Logout");
                             System.out.print("Enter choice: ");
                             ch = sc.nextInt();
-                            sc.nextLine(); // ✅ FIX buffer
+                            sc.nextLine(); /
 
                             switch (ch) {
 
@@ -51,7 +51,7 @@ public class Main {
 
                                 case 2:
                                     new ViewJobs().viewJobs();
-                                    new ApplyJob().apply(userId, sc); // ✅ FIXED
+                                    new ApplyJob().apply(userId, sc); 
                                     break;
 
                                 case 3:
