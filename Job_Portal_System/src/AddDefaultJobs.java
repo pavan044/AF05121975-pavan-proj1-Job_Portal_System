@@ -40,7 +40,7 @@ public class AddDefaultJobs {
             ps.setString(2, "HCL");
             ps.executeUpdate();
 
-            System.out.println("Default Jobs Added ✅");
+            System.out.println("Default Jobs Added");
 
         } catch (Exception e) {
             System.out.println(e);
