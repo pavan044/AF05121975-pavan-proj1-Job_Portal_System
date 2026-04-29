@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class LoginUser {
 
-    public int login(Scanner sc) {   // ✅ IMPORTANT: must have Scanner
+    public int login(Scanner sc) {  
         int userId = -1;
 
         try {
